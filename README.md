@@ -41,8 +41,20 @@ routes/messages.js
 Step 4: Message Routes & Controllers
 controllers/messages.js
 routes/messages.js
+routes/auth.js
 
 Step 5: Final Server Configuration
 Updated server.js to include routes:
 Add to server.js after middleware setup
 
+
+Testing my back-end:
+npm install dotenv
+npm install express
+npm install mongoose
+npm install cors
+npm install jsonwebtoken
+npm install bcryptjs
+
+
+npx nodemon server.js
