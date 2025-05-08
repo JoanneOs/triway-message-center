@@ -1,5 +1,8 @@
 # Triway Transport Message Center
 
+
+Step 1: Project Setup & Basic Server
+
 in new terminal in capstone folder:
 
 mkdir triway-message-center
@@ -24,11 +27,15 @@ git remote add origin https://github.com/JoanneOs/triway-message-center.git
 git push -u origin main (wrong) 
 had to: git push -u origin master
 
+
+Step 2: Database Models
 created models/User.js
 models/Message
 
+Step 3: Authentication System
 middleware/auth.js
-
 controllers/auth.js
 controllers/messages.js
 routes/messages.js
+
+Step 4: Message Routes & Controllers
