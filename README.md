@@ -25,3 +25,10 @@ git push -u origin main (wrong)
 had to: git push -u origin master
 
 created models/User.js
+models/Message
+
+middleware/auth.js
+
+controllers/auth.js
+controllers/messages.js
+routes/messages.js
