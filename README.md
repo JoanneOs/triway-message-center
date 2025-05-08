@@ -24,3 +24,4 @@ git remote add origin https://github.com/JoanneOs/triway-message-center.git
 git push -u origin main (wrong) 
 had to: git push -u origin master
 
+created models/User.js
