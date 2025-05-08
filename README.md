@@ -39,3 +39,10 @@ controllers/messages.js
 routes/messages.js
 
 Step 4: Message Routes & Controllers
+controllers/messages.js
+routes/messages.js
+
+Step 5: Final Server Configuration
+Updated server.js to include routes:
+Add to server.js after middleware setup
+

@@ -10,6 +10,23 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // For JSON request bodies
 
+// Route files
+const auth = require('./routes/auth');
+const messages = require('./routes/messages');
+
+// Mount routers
+app.use('/api/v1/auth', auth);
+app.use('/api/v1/messages', messages);
+
+// Error handling middleware (add at end)
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ 
+    success: false, 
+    error: 'Server Error' 
+  });
+});
+
 // Basic health check route
 app.get('/', (req, res) => {
   res.send('Triway Message Center API is running');
